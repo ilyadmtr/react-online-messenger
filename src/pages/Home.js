@@ -17,14 +17,21 @@ import User from "../components/user/User";
 import MessageForm from "../components/messageForm/MessageForm";
 import {ref, getDownloadURL, uploadBytes} from "firebase/storage";
 import Message from "../components/Message/Message";
+import {useNavigate} from "react-router-dom";
 
 export const Home = () =>{
+    const navigate = useNavigate();
     const [users, setUsers] = useState([]);
     const [chat, setChat] = useState("")
     const [text, setText] = useState('');
     const [img,setImg] = useState('');
     const [msgs, setMsgs]=  useState([])
-    const user1 = auth.currentUser.uid;
+
+
+    const user1 =auth.currentUser.uid;
+
+
+
     useEffect(()=>{
         const usersRef = collection(db, 'users');
         //create query object
@@ -40,8 +47,6 @@ export const Home = () =>{
         })
         return ()=>unsub();
     }, [])
-
-
     const selectUser = async (user)=>{
         setChat(user);
 
@@ -100,6 +105,8 @@ export const Home = () =>{
         setImg('');
         }
     }
+
+    console.log(auth)
 
     return (
         <div className='home_container'>
