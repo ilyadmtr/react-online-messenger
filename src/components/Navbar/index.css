@@ -1,0 +1,66 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: cadetblue;
+    padding: 30px 20px;
+}
+.navbar h3 a{
+    color: white;
+    font-size: 25px;
+    font-family: "Berlin Sans FB";
+}
+.navbar__auth{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__auth .btn{
+    margin: 0;
+}
+.profile_btn{
+    padding: 9px 18px;
+    background: azure;
+    border: 1px solid azure;
+    border-radius: 5px;
+    color: black;
+    transition: 0.3s;
+}
+.profile_btn:hover{
+    background: transparent;
+    color: white;
+}
+.login_btn{
+    padding: 7px 14px;
+    font-size: 18px;
+    background: transparent;
+    border: white 1px solid;
+    color: white;
+    border-radius: 5px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login_btn:hover{
+    background: white;
+    color: black;
+}
+
+@media (max-width: 400px) {
+    .profile_btn{
+        padding: 5px 10px;
+    }
+    .login_btn{
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    .navbar__auth{
+        width: 40%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

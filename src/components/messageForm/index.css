@@ -1,0 +1,55 @@
+.message_form{
+    width: 90%;
+    display: flex;
+    margin: 12px auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+    border-radius: 10px;
+}
+.label{
+    padding: 10px 12.5px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+.message_form input{
+    width: 40vw;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.message_form .btn_send{
+    padding: 7px 14px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: transparent;
+    cursor: pointer;
+}
+@media (max-width: 600px){
+    .label{
+        padding: 7px 9px;
+    }
+    .message_form input{
+        width: 30vw;
+    }
+}
+
+@media (max-width: 400px){
+    .label{
+        padding: 7px 9px;
+    }
+    .message_form{
+        padding: 5px;
+    }
+    .message_form input{
+        width: 25vw;
+        padding: 5px;
+    }
+    .message_form .btn_send{
+        padding: 3px 6px;
+    }
+}

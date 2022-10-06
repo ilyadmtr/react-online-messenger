@@ -1,0 +1,42 @@
+.register-section{
+    max-width: 500px;
+    margin: 50px auto;
+    border: cadetblue 3px solid;
+    border-radius: 15px;
+    padding: 50px;
+}
+.register-section h3{
+    font-family: 'Book Antiqua';
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.register-section label{
+    margin-right: 10px;
+    font-size: 20px;
+    font-family: "Book Antiqua";
+}
+.input_container input{
+    font-size: 20px;
+    margin: 15px auto;
+    outline: none;
+}
+.btn{
+    padding: 15px 30px;
+    font-size: 18px;
+    background: gold;
+    border: #ff9a02 1px solid;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+}
+/*.btn:hover{*/
+/*    transform: scale(1.05);*/
+/*}*/
+.error_p{
+    color: red;
+    font-family: "Bodoni MT";
+}

@@ -1,0 +1,13 @@
+.upload_svg{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    color: gray;
+}
+
+@media (max-width: 600px) {
+    .upload_svg{
+        width: 15px;
+        height: 15px;
+    }
+}
